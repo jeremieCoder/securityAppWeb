@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/logo.jpeg';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -25,8 +26,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <span className="logo-icon">🛡️</span>
-          <span className="logo-text">SecuGuard</span>
+          <img src={logo} alt="ABC SECURITY" className="logo-img" />
+          <span className="logo-text">ABC SECURITY</span>
         </Link>
 
         <button

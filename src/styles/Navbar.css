@@ -36,8 +36,11 @@
   transform: scale(1.02);
 }
 
-.logo-icon {
-  font-size: var(--font-size-2xl);
+.logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  border-radius: var(--border-radius-sm);
 }
 
 .logo-text {

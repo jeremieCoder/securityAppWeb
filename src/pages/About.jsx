@@ -2,15 +2,17 @@ import PageHeader from '../components/PageHeader';
 import TeamMember from '../components/TeamMember';
 import { team, values, stats } from '../data/team';
 import { Link } from 'react-router-dom';
+import aboutHeaderImage from '../assets/a4.jpeg';
+import companyImage from '../assets/a7.jpeg';
 import '../styles/About.css';
 
 const About = () => {
   return (
     <div className="about-page">
       <PageHeader
-        title="À propos de SecuGuard"
+        title="À propos de ABC SECURITY"
         subtitle="Une entreprise de confiance dédiée à votre sécurité depuis plus de 15 ans"
-        backgroundImage="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=1600&h=600&fit=crop"
+        backgroundImage={aboutHeaderImage}
         breadcrumbItems={[{ label: 'À propos' }]}
         size="medium"
       />
@@ -23,7 +25,7 @@ const About = () => {
               <span className="section-badge">Notre histoire</span>
               <h2>Plus de 15 ans d'expertise</h2>
               <p>
-                Fondée en 2009, SecuGuard est née de la volonté de proposer des services
+                Fondée en 2009, ABC SECURITY est née de la volonté de proposer des services
                 de sécurité de haute qualité, alliant professionnalisme et proximité client.
               </p>
               <p>
@@ -39,8 +41,8 @@ const About = () => {
             </div>
             <div className="company-image">
               <img
-                src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=600&h=400&fit=crop"
-                alt="Équipe SecuGuard"
+                src={companyImage}
+                alt="Équipe ABC SECURITY"
                 loading="lazy"
               />
               <div className="image-badge">
@@ -163,7 +165,7 @@ const About = () => {
         <div className="container">
           <div className="cta-box">
             <h2>Rejoignez nos clients satisfaits</h2>
-            <p>Découvrez comment SecuGuard peut répondre à vos besoins de sécurité</p>
+            <p>Découvrez comment ABC SECURITY peut répondre à vos besoins de sécurité</p>
             <Link to="/contact" className="btn btn-primary btn-lg">
               Contactez-nous
             </Link>

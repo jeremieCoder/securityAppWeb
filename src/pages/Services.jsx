@@ -2,6 +2,7 @@ import PageHeader from '../components/PageHeader';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../data/services';
 import { Link } from 'react-router-dom';
+import servicesHeaderImage from '../assets/a3.jpeg';
 import '../styles/Services.css';
 
 const Services = () => {
@@ -10,7 +11,7 @@ const Services = () => {
       <PageHeader
         title="Nos services"
         subtitle="Découvrez nos prestations de sécurité professionnelle adaptées à tous vos besoins"
-        backgroundImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&h=600&fit=crop"
+        backgroundImage={servicesHeaderImage}
         breadcrumbItems={[{ label: 'Services' }]}
         size="medium"
       />
@@ -22,7 +23,7 @@ const Services = () => {
             <div className="intro-badge">Expertise</div>
             <h2>Une gamme complète de solutions</h2>
             <p>
-              Chez SecuGuard, nous proposons une gamme complète de services de sécurité
+              Chez ABC SECURITY, nous proposons une gamme complète de services de sécurité
               pour répondre aux exigences des entreprises, des collectivités et des particuliers.
               Chaque prestation est personnalisée selon vos besoins spécifiques.
             </p>

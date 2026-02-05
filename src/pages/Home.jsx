@@ -3,6 +3,8 @@ import HeroSection from '../components/HeroSection';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../data/services';
 import { stats } from '../data/team';
+import heroImage from '../assets/a2.jpeg';
+import whyUsImage from '../assets/a6.jpeg';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -10,7 +12,8 @@ const Home = () => {
     <div className="home">
       <HeroSection
         title="Votre sécurité, notre priorité"
-        subtitle="SecuGuard vous accompagne avec des solutions de sécurité et de gardiennage sur mesure, adaptées à vos besoins professionnels et personnels."
+        subtitle="ABC SECURITY vous accompagne avec des solutions de sécurité et de gardiennage sur mesure, adaptées à vos besoins professionnels et personnels."
+        backgroundImage={heroImage}
       />
 
       {/* Stats Section */}
@@ -58,7 +61,7 @@ const Home = () => {
           <div className="why-us-content">
             <div className="why-us-text">
               <span className="section-badge">Nos atouts</span>
-              <h2>Pourquoi choisir SecuGuard ?</h2>
+              <h2>Pourquoi choisir ABC SECURITY ?</h2>
               <ul className="why-us-list">
                 <li>
                   <div className="check-icon">
@@ -108,7 +111,7 @@ const Home = () => {
             </div>
             <div className="why-us-image">
               <img
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=500&fit=crop"
+                src={whyUsImage}
                 alt="Équipe de sécurité professionnelle"
                 loading="lazy"
               />

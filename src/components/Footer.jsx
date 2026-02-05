@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="footer-section">
             <div className="footer-logo">
               <span className="logo-icon">🛡️</span>
-              <span className="logo-text">SecuGuard</span>
+              <span className="logo-text">ABC SECURITY</span>
             </div>
             <p className="footer-description">
               Votre partenaire de confiance pour tous vos besoins en sécurité et gardiennage depuis plus de 15 ans.
@@ -51,14 +51,14 @@ const Footer = () => {
               </li>
               <li>
                 <span className="contact-icon">✉️</span>
-                <a href="mailto:contact@secuguard.fr">contact@secuguard.fr</a>
+                <a href="mailto:contact@abcsecurity.fr">contact@abcsecurity.fr</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} SecuGuard. Tous droits réservés.</p>
+          <p>&copy; {currentYear} ABC SECURITY. Tous droits réservés.</p>
           <div className="footer-legal">
             <a href="#">Mentions légales</a>
             <a href="#">Politique de confidentialité</a>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PageHeader from '../components/PageHeader';
+import contactHeaderImage from '../assets/a5.jpeg';
 import '../styles/Contact.css';
 
 const Contact = () => {
@@ -57,7 +58,7 @@ const Contact = () => {
       <PageHeader
         title="Contactez-nous"
         subtitle="Notre équipe est à votre disposition pour répondre à toutes vos questions"
-        backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&h=600&fit=crop"
+        backgroundImage={contactHeaderImage}
         breadcrumbItems={[{ label: 'Contact' }]}
         size="medium"
       />
@@ -102,7 +103,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4>Email</h4>
-                    <p><a href="mailto:contact@secuguard.fr">contact@secuguard.fr</a></p>
+                    <p><a href="mailto:contact@abcsecurity.fr">contact@abcsecurity.fr</a></p>
                   </div>
                 </div>
 
